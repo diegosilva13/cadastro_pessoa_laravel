@@ -7,7 +7,7 @@ Implementação de um CRUD de pessoas com laravel PHP. O projeto ainda está sen
 Caso você queira executar o projeto você precisará dos seguintes itens configurados na sua maquina:
   - [Composer](https://getcomposer.org/)
   - [PHP](https://secure.php.net/)
-  - [Apache](https://httpd.apache.org/download.cgi)(não é necessário)
+  - [Apache](https://httpd.apache.org/download.cgi)(não é necessário para PHP5.4+)
   - [MySQL](https://www.mysql.com/downloads/)(Ainda não está sendo usado)
 
 # Executando
