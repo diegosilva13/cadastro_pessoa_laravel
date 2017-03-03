@@ -3,7 +3,7 @@ CRUD básico de pessoas com Framework Laravel
 
 Página oficial do Laravel: https://laravel.com/
 
-Implementação de um CRUD de pessoas com laravel PHP.
+Implementação de um CRUD de pessoas com laravel PHP.<br/>
 O que falta: 
  - Páginação dos dados da tela inicial
  - Campo pesquisar na tela inicial
