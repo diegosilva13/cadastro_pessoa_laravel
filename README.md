@@ -3,8 +3,12 @@ CRUD básico de pessoas com Framework Laravel
 
 Página oficial do Laravel: https://laravel.com/
 
-Implementação de um CRUD de pessoas com laravel PHP. O projeto ainda está sendo implementado, essas instruções poderão ser atualizadas a qualquer momento.
-
+Implementação de um CRUD de pessoas com laravel PHP.
+O que falta: 
+ - Páginação dos dados da tela inicial
+ - Campo pesquisar na tela inicial
+ - Validação dos campos(criar e editar)
+ 
 Caso você queira executar o projeto você precisará dos seguintes itens configurados na sua maquina:
   - [Composer](https://getcomposer.org/)
   - [PHP](https://secure.php.net/)
