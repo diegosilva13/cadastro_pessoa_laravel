@@ -9,7 +9,7 @@ O que falta:
  - Campo pesquisar na tela inicial
  - Validação dos campos(criar e editar)
  
-Caso você queira executar o projeto você precisará dos seguintes itens configurados na sua maquina:
+Caso você queira executar o projeto, precisará dos seguintes itens configurados na sua maquina:
   - [Composer](https://getcomposer.org/)
   - [PHP](https://secure.php.net/)
   - [Apache](https://httpd.apache.org/download.cgi)(não é necessário para PHP5.4+)
@@ -28,7 +28,7 @@ $ composer install
 ```sh
 $ php artisan migrate
 ```
-Migrations no Laravel são muito importantes aprenda mais sobre aqui [Migrations](https://laravel.com/docs/5.4/migrations) 
+Migrations no Laravel são muito importantes aprenda mais sobre, aqui [Migrations](https://laravel.com/docs/5.4/migrations) 
 
 - Se você não baixou o apache e está  com uma versão superior a 5.4 do PHP, vá até o diretório raiz do projeto e execute
 ```sh
