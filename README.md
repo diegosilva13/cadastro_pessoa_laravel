@@ -1,4 +1,5 @@
-# CRUD básico de pessoas com Framework Laravel
+CRUD básico de pessoas com Framework Laravel
+===================
 
 Página oficial do Laravel: https://laravel.com/
 
@@ -16,7 +17,16 @@ Caso você queira executar o projeto você precisará dos seguintes itens config
 ```sh
 $ composer install
 ```  
-  - Se você não baixou o apache e está  com uma versão superior a 5.4 do PHP, vá até o diretório raiz do projeto e execute
+
+  - Após a execução do composer edite a váriavel .env para que ela atenda as configurações locais do seu ambiente de desenvolvimento. 
+  
+  - Agora executaremos o migration do Laravel, para que ele crie nossa tabela pessoa. 
+```sh
+$ php artisan migrate
+```
+Migrations no Laravel são muito importantes aprenda mais sobre aqui [Migrations](https://laravel.com/docs/5.4/migrations) 
+
+- Se você não baixou o apache e está  com uma versão superior a 5.4 do PHP, vá até o diretório raiz do projeto e execute
 ```sh
 $ php artisan serve
 ```
