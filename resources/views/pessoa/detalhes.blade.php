@@ -34,24 +34,24 @@
 	 <h3 class="page-header">Detalhes</h3>
 	 	<div class="row">
 		  <div class="col-md-4">
-		    <p><strong>Nome do Campo</strong></p>
-		    <p>{Valor do Campo}</p>
+		    <p><strong>Nome</strong></p>
+		    <p>{{$pessoa->nome}}</p>
 		  </div>
 		  <div class="col-md-4">
-		    <p><strong>Nome do Campo</strong></p>
-		    <p>{Valor do Campo}</p>
+		    <p><strong>Telefone</strong></p>
+		    <p>{{$pessoa->telefone}}</p>
 		  </div>
 		  <div class="col-md-4">
-		    <p><strong>Nome do Campo</strong></p>
-		    <p>{Valor do Campo}</p>
+		    <p><strong>E-mail</strong></p>
+		    <p>{{$pessoa->email}}</p>
 		  </div>
 		</div>
 
 		<hr />
 		<div id="actions" class="row">
 		 <div class="col-md-12">
-		   <a href="index.html" class="btn btn-primary">Voltar</a>
-		   <a href="edit.html" class="btn btn-default">Editar</a>
+		   <a href="{{url::route('pessoa.index')}}" class="btn btn-primary">Voltar</a>
+		   <a href="/pessoa/editar/{{$pessoa->id}}" class="btn btn-default">Editar</a>
 		   <a href="#" class="btn btn-default" data-toggle="modal" data-target="#delete-modal">Excluir</a>
 		 </div>
 		</div>
@@ -68,7 +68,7 @@
 		        Deseja realmente excluir este item?
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-primary">Sim</button>
+		        <button type="button" class="btn btn-primary" onclick="window.location.replace('/pessoa/{{$pessoa->id}}/remover');">Sim</button>
 		 <button type="button" class="btn btn-default" data-dismiss="modal">N&atilde;o</button>
 		      </div>
 		    </div>

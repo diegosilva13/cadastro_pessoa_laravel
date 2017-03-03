@@ -1,17 +1,44 @@
 <?php
 
-Route::get('/', function () {
-		return view('perssoa.index');
-	});
+Route::get('/',
+	['as'   => 'index',
+		'uses' => 'Pessoa\PessoaController@index'
+	]);
 
-Route::get('/create', function () {
-		return view('perssoa.create');
-	});
+Route::group(['as' => 'pessoa.', 'prefix' => 'pessoa'], function () {
 
-Route::get('/show', function () {
-		return view('perssoa.show');
-	});
+		Route::get('',
+			['as'   => 'index',
+				'uses' => 'Pessoa\PessoaController@index'
+			]);
 
-Route::get('/edit', function () {
-		return view('perssoa.edit');
+		Route::get('criar',
+			['as'   => 'criar',
+				'uses' => 'Pessoa\PessoaController@criar'
+			]);
+
+		Route::post('salvar',
+			['as'   => 'salvar',
+				'uses' => 'Pessoa\PessoaController@salvar'
+			]);
+
+		Route::get('editar/{id}',
+			['as'   => 'editar',
+				'uses' => 'Pessoa\PessoaController@editar'
+			]);
+
+		Route::post('/{id}/atualizar',
+			['as'   => 'atualizar',
+				'uses' => 'Pessoa\PessoaController@atualizar'
+			]);
+
+		Route::get('/{id}/remover',
+			['as'   => 'salvar',
+				'uses' => 'Pessoa\PessoaController@remover'
+			]);
+
+		Route::get('/detalhes/{id}',
+			['as'   => 'detalhes',
+				'uses' => 'Pessoa\PessoaController@detalhes'
+			]);
 	});
